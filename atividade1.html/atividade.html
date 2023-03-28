@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade 1</title>
 </head>
 
 <body>
-    <script>
-        for (let num1 = 1; num1 <= 10; num1++) {
 
+    <h3>Atividade 1</h3>
+    <p>1) Escreva e teste um algoritmo em JavaScript que exiba no navegador toda a tabuada de multiplicação. Quando
+        concluir, cole todo o código no campo abaixo:</p>
+
+    <script>
+
+        // Observe que o código Javascript está sendo executado dentro do HTML.
+        // Referências → https://www.w3schools.com/js/js_whereto.asp
+
+        // Loop que gera o primeiro número → Multiplicando.
+        // referênias → https://www.w3schools.com/js/js_loop_for.asp
+        for (let num1 = 1; num1 <= 10; num1++) {
+            document.write(`Tabuada de ${num1}:<br><br>`)
+
+            // Loop que gera o segundo número → Multiplicador.
             for (let num2 = 0; num2 <= 10; num2++) {
+
+                // Faz a multiplicação e armazena o resultado em 'multi'.
+                // Referências → https://www.w3schools.com/js/js_operators.asp
+                // Referências → https://www.w3schools.com/js/js_arithmetic.asp
                 let multi = num1 * num2
+
+                // Saída para navegador usando "Template String" para interpolar as variáveis.
+                // Referências → https://www.w3schools.com/js/js_string_templates.asp
                 document.write(`${num1} x ${num2} = ${multi}<br>`)
             }
+
+            // Uma linha horizontal.
             document.write('<hr>')
         }
+
     </script>
+
 </body>
 
 </html>

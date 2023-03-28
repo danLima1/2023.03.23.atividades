@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade 4</title>
 </head>
 
 <body>
+
+    <h3>Atividade 4</h3>
+    <p>4) Escreva e teste um algoritmo em JavaScript que recebe um texto e verifica se é um e-mail válido ou não. A
+        verificação será feita pela presença do caracter "@". Quando concluir, cole todo o código no campo abaixo:</p>
+
+    <button onclick="validaEmail()">Inicio</button>
+
     <script>
 
-        let email = prompt("Digite um e-mail:")
+        function validaEmail() {
 
-        if (email.indexOf('@') < 1) {
-            document.write('E-mail inválido!')
-        } else {
-            document.write('E-mail aparentemente válido!')
+            let email = prompt("Digite um e-mail:")
+
+            if (email.indexOf('@') < 1) {
+                document.write('E-mail inválido!')
+            } else {
+                document.write('E-mail aparentemente válido!')
+            }
+
         }
 
     </script>
+
 </body>
 
 </html>

@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade 5</title>
 </head>
+
 <body>
+
+    <h3>Atividade 5</h3>
+    <p>5) Escreva e teste um algoritmo em JavaScript que lista os itens da coleção abaixo no navegador, 1 por linha.
+        Quando concluir, cole todo o código no campo abaixo:</p>
+    <pre>let fruits = ["banana", "laranja", "acerola", "uva", "limão"]</pre>
+
+    <!-- Aqui vai ser exibido o resultado do script. -->
+    <div id="saida"></div>
+
     <script>
+
+        // Coleção.
+        let fruits = ["banana", "laranja", "acerola", "uva", "limão"]
+
+        // Variável com a saída HTML que abre a lista.
+        var saidaHTML = "<ul>\n"
+
+        // Iterando a coleção.
+        for (
+            let indice = 0;
+            indice < fruits.length;
+            indice++
+        ) {
+            saidaHTML += `\t<li>${fruits[indice]}</li>\n`
+        }
+
+        // Fecha lista.
+        saidaHTML += "</ul>"
+
+        // Exibe o conteúdo de "saidaHTML" na <div> com id="saida".
+        // 1ª forma.
+        // document.getElementById('saida').innerHTML = saidaHTML
         
+        // 2ª forma.
+        saida.innerHTML = saidaHTML
+
     </script>
+
 </body>
+
 </html>
